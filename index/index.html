@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Module 4 Demonstration</title>
+    <link rel="stylesheet" type="text/css" href="styles/module4demo.css" />
+    <script type="text/javascript">
+        function MenuChoice()
+{
+    if (document.getElementById("menu").value == "Display Section 1")
+    {
+        document.getElementById("section1").style.visibility = "visible";
+        document.getElementById("section2").style.visibility = "hidden";
+     }
+     
+     else if (document.getElementById("menu").value == "Display Section 2")
+     {
+        document.getElementById("section1").style.visibility = "hidden";
+        document.getElementById("section2").style.visibility = "visible";
+     }
+     else
+     {
+        document.getElementById("section1").style.visibility = "hidden";
+        document.getElementById("section2").style.visibility = "hidden";
+     }
+}
+    </script>
+</head>
+
+<body>
+    <section id="title">
+        <h1>Module 4 Demo</h1>
+        <hr>
+            <select onchange="MenuChoice()" id="menu">
+                <option>Please select an option</option>
+                <option>Display Section 1</option>
+                <option>Display Section 2</option>
+             </select>
+               <hr>
+                  
+    </section>
+           
+                <section id="section1" class="section1">
+                    <h2>This is Section 1</h2>
+                </section>
+                
+                <section id="section2" class="section2">
+                    <h2>This is Section 2</h2>
+                </section>
+                
+</body>
+</html>
+                
+                
